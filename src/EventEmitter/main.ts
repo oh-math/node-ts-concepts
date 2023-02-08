@@ -31,5 +31,5 @@ event.emit("far"); // <-------- shouldn't work
 
 //---------------------------------------------------------------
 
-console.log(event.listenerCount("foo"));
-console.log(event.rawListeners("foo"));
+console.log(event.listenerCount("foo")); // should return the number of functions
+console.log(event.rawListeners("foo").toString()); // should return functions
