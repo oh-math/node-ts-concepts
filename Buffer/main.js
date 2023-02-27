@@ -10,8 +10,8 @@ console.log(buff.toJSON());
     115, 116, 114, 105,
     110, 103,   0,   0
   ]
+  Como foram alocados 8 de espaço e só foi usado 6, o resto ficará vazio
   
-  Como foram alocados 8 de espaço e só foi usadoo6, o resto ficará vazio
 */
 
 console.log(buff.toString()); // Decodificando esse dado com a palavra "string"
@@ -28,6 +28,7 @@ console.log(decodeBase64.toString("utf-8")); // Decodificando o Buffer. Deve pri
 
 const arrOfHex = [79, 75, 65, 82, 73, 78]; // Nome "OKARIN" em decimal 
 
-const hexToBuff = nbuff.Buffer.from(arrOfHex, 'utf-8').toString('utf-8') 
+const hexToBuff = nbuff.Buffer.from(arrOfHex, 'utf-8').toString('utf-8') // Decode
 
 console.log(hexToBuff); // Deve printar "OKARIN"
+
